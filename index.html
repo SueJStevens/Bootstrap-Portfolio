@@ -11,25 +11,29 @@
 </head>
 <body>
 
+    <!--header will always be on top of viewport-->
     <header class="sticky-top">
         <!--spans the full width of the viewport-->
-        <div class="container-fluid">
+        <div class="container-fluid container-top">
             <!--spans a fixed width based on media sizes developed by bootstrap-->
             <div class="container">
+                <!--Nav Bar with logo and app title on left; menu on right changes to hamburger when screen is small-->
+                <nav class="navbar navbar-expand-lg navbar-light">
 
-
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <!--logo and app title-->
                     <a class="navbar-brand" href="#">
-                        <div class="text-center m-0 p-1 logobox blue-border">
+                        <div class="text-center m-0 p-1 logobox">
                             <img class="m-0 p-0" src="assets/brand/color_logo_transparent.png" width="60" height="40" alt=""><br/>Sue J. Stevens
                         </div>
                     </a>
-                    
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+
+                    <!--hamburger hidden on large screens-->                    
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler02" aria-controls="navbarToggler02" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+
+                    <!--menu collapse into hamburger on small screens-->                    
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarToggler02">
                         <ul class="navbar-nav mt-2 mt-lg-0">
                             <li class="nav-item active">
                                 <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
@@ -42,12 +46,8 @@
                             </li>
                         </ul>
                     </div>
+
                 </nav>
-
-
-
-
-
             </div>
         </div>
     </header>
@@ -55,16 +55,45 @@
 
     <!-- Begin page content -->
     <main role="main" class="container">
-      <h1 class="mt-5">Sticky footer with fixed navbar</h1>
-      <p class="lead">Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS. A fixed navbar has been added with <code>padding-top: 60px;</code> on the <code>body &gt; .container</code>.</p>
-      <p>Back to <a href="../sticky-footer">the default sticky footer</a> minus the navbar.</p>
+        <div class="row">
+            <div class="col mt-3">
+                <h1>Biography</h1>
+                <hr>        
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-9">
+                <img class="rounded-circle float-left pr-3" src="assets/images/Sue_Stevens.jpg" alt="Sue J. Stevens Portfolio Image" id="aboutImg">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt blandit purus, at vestibulum nulla placerat quis. Donec efficitur tincidunt mauris in aliquet. Sed non mi nisl. Nam urna lacus, faucibus ut finibus eu, viverra vitae velit. Sed in purus vitae ipsum euismod tristique vel sed nisi. Sed suscipit facilisis leo et interdum. Cras viverra eros vel urna venenatis iaculis. In hac habitasse platea dictumst. Donec placerat diam elementum euismod lacinia. Nam orci purus, vestibulum sed sapien ut, rhoncus efficitur quam. Quisque diam est, pellentesque ut massa nec, placerat accumsan lorem. In hac habitasse platea dictumst. Integer in sapien auctor, viverra risus quis, rhoncus nibh. Mauris et congue diam. Phasellus fermentum lacus non mauris hendrerit, nec finibus tortor hendrerit.</p>
+                <p>Duis faucibus, tellus vitae aliquam dignissim, dui ex efficitur justo, eget posuere tellus enim at ligula. Maecenas varius, turpis eu venenatis finibus, sapien arcu viverra dui, et aliquam massa nibh id velit. Nulla non nisl euismod, ultrices quam a, scelerisque orci. Mauris ultricies efficitur sapien, et pharetra magna faucibus facilisis. Fusce tempus lobortis nisl nec pellentesque. Nunc non dignissim lacus. In et dapibus orci. Fusce id laoreet leo, a semper nisl. Vestibulum ultricies euismod consequat. Integer non lorem eget nulla consequat malesuada et lobortis risus. Etiam cursus sapien posuere lacus gravida, vitae viverra orci condimentum.</p>
+                <p>Duis faucibus, tellus vitae aliquam dignissim, dui ex efficitur justo, eget posuere tellus enim at ligula. Maecenas varius, turpis eu venenatis finibus, sapien arcu viverra dui, et aliquam massa nibh id velit. Nulla non nisl euismod, ultrices quam a, scelerisque orci. Mauris ultricies efficitur sapien, et pharetra magna faucibus facilisis. Fusce tempus lobortis nisl nec pellentesque. Nunc non dignissim lacus. In et dapibus orci. Fusce id laoreet leo, a semper nisl. Vestibulum ultricies euismod consequat. Integer non lorem eget nulla consequat malesuada et lobortis risus. Etiam cursus sapien posuere lacus gravida, vitae viverra orci condimentum.</p>
+                <p>Nulla nec ante vitae tortor lobortis luctus ut eget mi. Pellentesque placerat placerat ipsum nec scelerisque. Quisque consequat congue nisi id tincidunt. Nulla blandit euismod imperdiet. Mauris ornare vestibulum libero eu sodales. Aenean volutpat mi urna, at luctus tortor interdum at. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse potenti. Fusce ac sapien ac diam gravida faucibus. Donec nec sapien erat. Sed vestibulum convallis accumsan. Aliquam id euismod ante. Mauris at sagittis ligula. Nunc nisi felis, posuere non ipsum nec, ultricies lobortis libero.</p>
+                <p>I am the last paragraph</p>
+            </div>
+            <div class="col-3">
+                Right hand side reserved for social media
+            </div>
+        </div>
+
     </main>
 
-    <footer class="footer">
-      <div class="container">
-        <span class="text-muted">&copy; Copyright 2018 Sue J. Stevens</span>
-      </div>
-    </footer>
+    <!--header will always be on top of viewport-->
+    <footer class="fixed-bottom">
+            <!--spans the full width of the viewport-->
+            <div class="container-fluid container-bottom">
+                <!--spans a fixed width based on media sizes developed by bootstrap-->
+                <div class="container">
+                    <!--Nav Bar copyright in footer-->
+                    <nav class="navbar navbar-expand-lg">
+                        <div>
+                            <p id="copyright">&copy; Copyright 2018 Sue J. Stevens</p>
+                        </div>    
+                    </nav>
+                </div>
+            </div>
+        </footer>
+     
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
