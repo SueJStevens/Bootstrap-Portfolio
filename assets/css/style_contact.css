@@ -29,6 +29,10 @@ form {
     margin: 0 auto;
     background: #fff url("../images/postcard-bg.jpg");
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    
 }
 
 #to {
