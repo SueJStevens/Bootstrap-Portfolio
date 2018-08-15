@@ -59,79 +59,92 @@
 
     <!-- Begin page content -->
     <main role="main" class="container">
-        <div class="row">
-            <div class="col mt-3">
-                <h1>Portfolio</h1>
-                <hr>        
-            </div>
+      <div class="row">
+        <div class="col-12 mt-3">
+          <h1>Portfolio</h1>
+          <hr>        
         </div>
-      
-            <div class="album py-5 bg-light">
-              <div class="container">
-      
-                <div class="row">
-                  <div class="col-lg-4">
-                    <div class="card mb-4 shadow-sm">
-                      <img class="card-img-top portfolio-thumbs" src="assets/images/jason-leung-705076-unsplash.jpg" alt="Hangman">
-                      <figcaption>Photo by Jason Leung on Unsplash.</figcaption>
-                      <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-center">
-                          <button type="button" class="btn btn-block btn-outline-secondary">Hangman</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4">
-                    <div class="card mb-4 shadow-sm">
-                      <img class="card-img-top portfolio-thumbs" src="assets/images/raynaldy-dachlan-45670-unsplash.jpg" alt="RPG Game">
-                      <figcaption>Photo by Raynaldy Dachlan on Unsplash.</figcaption>
-                      <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-center">
-                          <button type="button" class="btn btn-block btn-outline-secondary">RPG Game</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4">
-                    <div class="card mb-4 shadow-sm">
-                      <img class="card-img-top portfolio-thumbs" src="assets/images/tracy-thomas-56810-unsplash.jpg" alt="Trivia Game">
-                      <figcaption>Photo by Tracy Thomas on Unsplash.</figcaption>
-                      <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-center">
-                          <button type="button" class="btn btn-block btn-outline-secondary">Trivia Game</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-      
-                  <div class="col-lg-4">
-                    <div class="card mb-4 shadow-sm">
-                      <img class="card-img-top portfolio-thumbs" src="assets/images/chris-liverani-552010-unsplash.jpg" alt="Rutgers Info Widget">
-                      <figcaption>Photo by Chris Liverani on Unsplash.</figcaption>
-                      <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-center">
-                          <button type="button" class="btn btn-block btn-outline-secondary">Rutgers Info Widget</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4">
-                    <div class="card mb-4 shadow-sm">
-                      <img class="card-img-top portfolio-thumbs" src="assets/images/pro-church-media-441059-unsplash.jpg" alt="Rock Paper ScissorsCard image cap">
-                      <figcaption class="text-muted">Photo by Pro Church Media on Unsplash.</figcaption>
-                      <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-center">
-                          <button type="button" class="btn btn-block btn-outline-secondary">Rock Paper Scissors</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+      </div>
 
+      <!--Begin album content 
+        Note Bootstrap documentation allows for column wrapping.  See this link:  https://getbootstrap.com/docs/4.0/layout/grid/#auto-layout-columns
+        If more than 12 columns are placed within a single row, each group of extra columns will, as one unit, wrap onto a new line.
+        ***By Design, to make it easy to add content from a database in the future, I am choosing one row which will wrap all cards in the album when they exceed 12 columns***
+      -->
+    
+      <div class="album py-5 bg-light">
+        <div class="container">
+          <div class="row">
+          <!--1st card-->
+          <div class="col-lg-4 col-md-6 col-xs-12">
+              <div class="card mb-4 shadow-sm">
+                <img class="card-img-top portfolio-thumbs" src="assets/images/jason-leung-705076-unsplash.jpg" alt="Hangman">
+                <figcaption>Photo by Jason Leung on Unsplash.</figcaption>
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <button type="button" class="btn btn-block btn-outline-secondary">Hangman</button>
+                  </div>
                 </div>
               </div>
             </div>
+
+          <!--2nd card-->
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="card mb-4 shadow-sm">
+                <img class="card-img-top portfolio-thumbs" src="assets/images/raynaldy-dachlan-45670-unsplash.jpg" alt="RPG Game">
+                <figcaption>Photo by Raynaldy Dachlan on Unsplash.</figcaption>
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <button type="button" class="btn btn-block btn-outline-secondary">RPG Game</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          <!--3rd card-->
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="card mb-4 shadow-sm">
+                <img class="card-img-top portfolio-thumbs" src="assets/images/tracy-thomas-56810-unsplash.jpg" alt="Trivia Game">
+                <figcaption>Photo by Tracy Thomas on Unsplash.</figcaption>
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <button type="button" class="btn btn-block btn-outline-secondary">Trivia Game</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          <!--4th card-->
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="card mb-4 shadow-sm">
+                <img class="card-img-top portfolio-thumbs" src="assets/images/chris-liverani-552010-unsplash.jpg" alt="Rutgers Info Widget">
+                <figcaption>Photo by Chris Liverani on Unsplash.</figcaption>
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <button type="button" class="btn btn-block btn-outline-secondary">Rutgers Info Widget</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          <!--5th card-->
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <div class="card mb-4 shadow-sm">
+                <img class="card-img-top portfolio-thumbs" src="assets/images/pro-church-media-441059-unsplash.jpg" alt="Rock Paper ScissorsCard image cap">
+                <figcaption class="text-muted">Photo by Pro Church Media on Unsplash.</figcaption>
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <button type="button" class="btn btn-block btn-outline-secondary">Rock Paper Scissors</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
       
-          </main>
+    </main>
       
     <!--footer will always be on bottom of viewport-->
     <footer class="fixed-bottom">
