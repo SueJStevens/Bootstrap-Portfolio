@@ -7,7 +7,22 @@ font-family: 'Allan', cursive;
 Logo Color:  color: #445976;
 */
 @import url('https://fonts.googleapis.com/css?family=Allan|Calligraffitti|IM+Fell+Great+Primer:400i');
+/*Postcard CSS Script*/
+@font-face {
+    font-family: 'handwriting';
+    src: url('../fonts/journal-webfont.woff2') format('woff2'),
+         url('../fonts/journal-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
+@font-face {
+    font-family: 'typewriter';
+    src: url('../fonts/veteran_typewriter-webfont.woff2') format('woff2'),
+         url('../fonts/veteran_typewriter-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 .red-border {
     border-style: solid;
     border-color: red;
@@ -27,6 +42,7 @@ body {
     font-family: 'IM Fell Great Primer', serif !important;
     color: #1F2936;
 }
+
 
 .container-top {
     border-bottom: solid;
@@ -82,3 +98,152 @@ body {
     border-color: red;
 } 
 
+.img-responsive { 
+    width:100%;
+}
+
+form {
+    position: relative;
+    width: 740px;
+    height: 498px;
+    margin: 0 auto;
+    background: #fff url("../images/postcard-bg.jpg");
+}
+
+.postcard {
+  
+
+}
+#to {
+    position : absolute;
+    left : 405px;
+    top  : 195px;
+   
+     font : 1.2em "typewriter", sans-serif; 
+  }
+  
+  #from {
+    position: absolute;
+    left : 388px;
+    top  : 225px;
+  }
+  
+  #reply {
+    position: absolute;
+    left : 375px;
+    top  : 280px;
+  }
+  
+  #message {
+    position: absolute;
+    left : 20px;
+    top  : 70px;
+  }
+
+  label {
+     font : 1.2em "typewriter", sans-serif; 
+  }
+
+  input, textarea {
+    font    : 2.9em/1.0em "handwriting", sans-serif;
+  
+    border  : none;
+    padding : 0 10px;
+    margin  : 0;
+    width   : 240px;
+  
+    background: none;
+  }
+
+  input:focus, textarea:focus {
+    background   : rgba(0,0,0,.1);
+    border-radius: 5px;
+    outline      : none;
+  }
+
+  textarea {
+    display : block;
+  
+    padding : 10px;
+    margin  : 10px 0 0 -10px;
+    width   : 340px;
+    height  : 360px;
+  
+    resize  : none;
+    overflow: auto;
+  }
+
+  .button-postcard {
+    position     : absolute;
+    left         : 440px;
+    top          : 360px;
+  
+    padding      : 5px;
+  
+    font         : bold .6em sans-serif;
+    border       : 2px solid #333;
+    border-radius: 5px;
+    background   : none !important;
+    background-color: transparent !important;
+  
+    cursor       : pointer;
+  
+  -webkit-transform: rotate(-1.5deg);
+     -moz-transform: rotate(-1.5deg);
+      -ms-transform: rotate(-1.5deg);
+       -o-transform: rotate(-1.5deg);
+          transform: rotate(-1.5deg);
+  }
+  
+  .button-postcard:after {
+    content: " >>>";
+  }
+  
+  .button-postcard:hover,
+  button:focus {
+    outline   : none;
+    background: #000;
+    color   : #FFF;
+  }
+
+/*Portfolio css*/
+:root {
+    --jumbotron-padding-y: 3rem;
+  }
+  
+  .jumbotron {
+    padding-top: var(--jumbotron-padding-y);
+    padding-bottom: var(--jumbotron-padding-y);
+    margin-bottom: 0;
+    background-color: #fff;
+  }
+  @media (min-width: 768px) {
+    .jumbotron {
+      padding-top: calc(var(--jumbotron-padding-y) * 2);
+      padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+    }
+  }
+  
+  .jumbotron p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .jumbotron-heading {
+    font-weight: 300;
+  }
+  
+  .jumbotron .container {
+    max-width: 40rem;
+  }
+
+  /* Giving credit to photographer for images */
+figcaption {
+  font-family: 'IM Fell Great Primer', serif !important;
+  color: #445976 !important;
+  font-size: 0.75rem;
+  line-height: 1.0;}
+
+/*sizing the portfolio images container*/
+.portfolio-thumbs {
+  height: 275px;
+}
