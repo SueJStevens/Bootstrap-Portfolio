@@ -19,21 +19,6 @@ Logo Color:  color: #445976;
     border-color: blue;
 }
 
-/*responive fonts*/
-
-
-@include media-breakpoint-up(sm)
-{
-  h1, .h1
-  {
-    font-size:1.2rem;
-  }
-}
-
-
-  
-  
-
   
   /*Custom css needed to overwrite Bootstrap, shared by all pages*/
 body {
