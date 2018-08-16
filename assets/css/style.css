@@ -19,12 +19,29 @@ Logo Color:  color: #445976;
     border-color: blue;
 }
 
-/*Custom css needed to overwrite Bootstrap, shared by all pages*/
+/*responive fonts*/
+
+
+@include media-breakpoint-up(sm)
+{
+  h1, .h1
+  {
+    font-size:1.2rem;
+  }
+}
+
+
+  
+  
+
+  
+  /*Custom css needed to overwrite Bootstrap, shared by all pages*/
 body {
     /* Margin bottom by footer height */
     margin-bottom: 30px;
   }
-  
+
+
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     font-family: 'IM Fell Great Primer', serif !important;
     color: #1F2936;
@@ -50,8 +67,6 @@ body {
     line-height: 1.0;
     background-color: inherit;
 }
-
-
 
 .nav,
 .nav-item,
