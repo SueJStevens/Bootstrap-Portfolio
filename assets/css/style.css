@@ -19,6 +19,11 @@ Logo Color:  color: #445976;
     border-color: blue;
 }
 
+
+    .navbar {
+        max-height:50px;
+    }
+
   
   /*Custom css needed to overwrite Bootstrap, shared by all pages*/
 body {

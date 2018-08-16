@@ -21,53 +21,45 @@
 
     <!--header will always be on top of viewport-->
     <header class="sticky-top">
-            <!--spans the full width of the viewport-->
-            <div class="container-fluid container-top">
-                <!--spans a fixed width based on media sizes developed by bootstrap-->
-                <div class="container">
-                    <!--Nav Bar with logo and app title on left; menu on right changes to hamburger when screen is small-->
-                    <nav class="navbar navbar-expand-md navbar-light">
-    
-                        <!--logo and app title-->
-                        <div class="justify-content-left col-4">
-                        <a class="nav" href="index.html">
-                            <div class="text-center m-0 p-1 logobox">
-                                <span class="nav">Sue J. Stevens</span>
-                            </div>
-                        </a>
+        <!--spans the full width of the viewport-->
+        <div class="container-fluid container-top">
+            <!--spans a fixed width based on media sizes developed by bootstrap-->
+            <div class="container">
+                <!--Nav Bar with logo and app title on left; menu on right changes to hamburger when screen is small-->
+                <nav class="navbar navbar-expand-md navbar-light">
+
+                    <!--logo and app title-->
+                    <a class="navbar-brand" href="index.html">
+                        <div class="text-center m-0 p-1 logobox">
+                            <img class="m-0 p-0" src="assets/brand/color_logo_transparent.png" width="60" height="40" alt=""><span class="d-none d-md-block">Sue J. Stevens</span>
+                        </div>
+                    </a>
+
+                    <!--hamburger hidden on large screens-->                    
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler02" aria-controls="navbarToggler02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!--menu collapse into hamburger on small screens-->                    
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarToggler02">
+                        <ul class="navbar-nav mt-2 mt-lg-0">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="portfolio.html">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
                     </div>
 
-                        <div class="text-center col-4">
-                                <a href="index.html">
-                                        <img src="assets/brand/color_logo_with_background1_120x120.png" class="rounded-circle">
-                                </a> 
-                        </div>       
-
-    
-                        <!--hamburger hidden on large screens-->                    
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler02" aria-controls="navbarToggler02" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-    
-                        <!--menu collapse into hamburger on small screens-->                    
-                        <div class="collapse navbar-collapse justify-content-end col-4" id="navbarToggler02">
-                            <ul class="navbar-nav mt-2 mt-lg-0">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="portfolio.html">Portfolio</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="contact.html">Contact</a>
-                                </li>
-                            </ul>
-                        </div>
-    
-                    </nav>
-                </div>
+                </nav>
             </div>
-        </header>
+        </div>
+    </header>
+
 
     <!-- Begin page content -->
     <main role="main" class="container">
