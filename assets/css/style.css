@@ -19,17 +19,24 @@ Logo Color:  color: #445976;
     border-color: blue;
 }
 
+body {
+    padding-bottom: 20px;
+  }
+  
+  .navbar {
+    margin-bottom: 20px;
+  }
 
-    .navbar {
+/*     .navbar {
         max-height:50px;
-    }
+    } */
 
   
   /*Custom css needed to overwrite Bootstrap, shared by all pages*/
-body {
+/* body { */
     /* Margin bottom by footer height */
-    margin-bottom: 30px;
-  }
+ /*    margin-bottom: 30px;
+  } */
 
 
 /* .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
@@ -78,6 +85,7 @@ body {
     color: rgba(31, 41, 54, 0.5);
 }
  */
-footer {
+/* footer {
     font-size: .75rem;
 }
+ */
