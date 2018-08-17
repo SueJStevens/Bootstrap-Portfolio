@@ -27,7 +27,13 @@ body {
     margin-bottom: 20px;
   }
 
-/*     .navbar {
+  .container-top {
+    border-bottom: solid;
+    border-color: #1F2936;
+    background-color: white;
+}
+
+  /*     .navbar {
         max-height:50px;
     } */
 
@@ -45,11 +51,6 @@ body {
 }
 
 
-.container-top {
-    border-bottom: solid;
-    border-color: #1F2936;
-    background-color: white;
-}
 
 .container-bottom {
     border-top: solid;
