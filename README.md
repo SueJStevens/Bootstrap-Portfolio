@@ -10,6 +10,8 @@ Logo is deliberately cut off at top by design.  This design element works proper
 
 I also was not able to get media responsive for the nav collapse to work properly with the logo on sm and xs with strictly bootstrap and resorted to @media in css.
 
+I got creative on the Contact form, but it doesn't work as well as anticipated in bootstrap responsive when screen is sm or xs.  I've been unable to resolve before deadline to submit homework.  Also, this form is manipulated mostly through css rather than bootstrap.
+
 VERY IMPORTANT NOTE TO TA's Grading:          
 Bootstrap documentation allows for column wrapping.  See this link:  https://getbootstrap.com/docs/4.0/layout/grid/#auto-layout-columns
         If more than 12 columns are placed within a single row, each group of extra columns will, as one unit, wrap onto a new line.
