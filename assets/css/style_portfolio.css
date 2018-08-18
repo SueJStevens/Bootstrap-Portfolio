@@ -29,7 +29,7 @@
   }
 
   /* formatting credit caption (credit to photographer for images) */
-figcaption {
+.caption {
   font-family: 'IM Fell Great Primer', serif !important;
   color: #445976 !important;
   font-size: 0.75rem;
