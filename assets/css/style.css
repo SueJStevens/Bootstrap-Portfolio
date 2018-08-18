@@ -19,11 +19,7 @@ Logo Color:  color: #445976;
     border-color: blue;
 }
 
-body {
-    padding-bottom: 20px;
-  }
-  
-
+/*css shared across multiple html files, design elements notavailable in bootstrap*/
 
   .container-top {
     border-bottom: solid;
@@ -37,10 +33,9 @@ body {
     background-color: white;
 }
 
-/*  .navbar, .navbar-collapse {*/
-    /*height:55px;*/ /*works on medium and large screen*/
-/*    height: inherit;*/
-/*}  */
+footer {
+    font-size: .75rem;
+}
 
 /*setting custom height of nav bar for small & extra small screens by adjusting the logo size*/
 @media (min-width: 0px) {
@@ -49,6 +44,7 @@ body {
     width: 60px;
     } 
 }
+
 
 /*setting custom height of nav bar for all screens larger than small by adjusting the logo size
     Height of nav bar is by design and suppose to "cut off" top of logo
@@ -64,42 +60,30 @@ body {
    }
 
 
-  
-  /*Custom css needed to overwrite Bootstrap, shared by all pages*/
-/* body { */
-    /* Margin bottom by footer height */
- /*    margin-bottom: 30px;
-  } */
 
-
-/* .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-    font-family: 'IM Fell Great Primer', serif !important;
+ body, .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    /*font-family: 'IM Fell Great Primer', serif !important;*/
     color: #1F2936;
 }
 
 
-
-
-
-.navbar-brand {
-    font-family: 'IM Fell Great Primer', serif !important;
-    color: #445976 !important;
-    font-size: 2.5rem;
-    line-height: 1.0;
-    background-color: inherit;
-}
-
-.nav,
-.nav-item,
-.nav-link,
-.navbar-light {
-    font-family: 'IM Fell Great Primer', serif !important;
+ #brand {
+     /*font-family: 'IM Fell Great Primer', serif !important;*/
     color: #1F2936;
     font-size: 1.3rem;
-    line-height: 1.0;
     text-decoration: none;
     background-color: inherit;
 }
+
+ .nav,
+ .nav-item,
+ .nav-link,
+ .navbar-light {
+     color: #1F2936;
+     font-size: 1.0rem;
+     text-decoration: none;
+     background-color: inherit;
+ }
 
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
     color: rgba(31, 41, 54, 0.9);
@@ -108,8 +92,3 @@ body {
 .navbar-light .navbar-nav .nav-link {
     color: rgba(31, 41, 54, 0.5);
 }
- */
-/* footer {
-    font-size: .75rem;
-}
- */
