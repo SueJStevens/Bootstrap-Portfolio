@@ -23,9 +23,7 @@ body {
     padding-bottom: 20px;
   }
   
-  .navbar {
-    margin-bottom: 20px;
-  }
+
 
   .container-top {
     border-bottom: solid;
@@ -33,9 +31,38 @@ body {
     background-color: white;
 }
 
-  /*     .navbar {
-        max-height:50px;
-    } */
+.container-bottom {
+    border-top: solid;
+    border-color: #1F2936;
+    background-color: white;
+}
+
+/*  .navbar, .navbar-collapse {*/
+    /*height:55px;*/ /*works on medium and large screen*/
+/*    height: inherit;*/
+/*}  */
+
+/*setting custom height of nav bar for small & extra small screens by adjusting the logo size*/
+@media (min-width: 0px) {
+    #logo {
+    height: 60px;
+    width: 60px;
+    } 
+}
+
+/*setting custom height of nav bar for all screens larger than small by adjusting the logo size
+    Height of nav bar is by design and suppose to "cut off" top of logo
+*/
+   @media (min-width: 768px) {
+    .navbar {
+        height:55px;
+    }
+    #logo {
+    height: 120px;
+    width: 120px;
+    } 
+   }
+
 
   
   /*Custom css needed to overwrite Bootstrap, shared by all pages*/
@@ -52,11 +79,7 @@ body {
 
 
 
-.container-bottom {
-    border-top: solid;
-    border-color: #1F2936;
-    background-color: white;
-}
+
 
 .navbar-brand {
     font-family: 'IM Fell Great Primer', serif !important;
