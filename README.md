@@ -1,7 +1,11 @@
 # Bootstrap-Portfolio
 Bootcamp Assignment 8/11/2018 - Bootstrap-Portfolio
+Submitted for grading 8/18/2018 apx 3:30 pm
 
-###By Design Elements###
+**Extras!**
+Click on the Rock-Paper-Scissors button on Portfolio page :)
+
+**By Design Elements**
 container-fluid + css allows a full browser width for header and footer with a border bottom on header and border top on footer.
 
 container allows for a very wide margin of header, content and footer
@@ -15,11 +19,11 @@ I got creative on the Contact form, but it doesn't work as well as anticipated i
 VERY IMPORTANT NOTE TO TA's Grading:          
 Bootstrap documentation allows for column wrapping.  See this link:  https://getbootstrap.com/docs/4.0/layout/grid/#auto-layout-columns
         If more than 12 columns are placed within a single row, each group of extra columns will, as one unit, wrap onto a new line.
-        ***By Design, to make it easy to add content from a database in the future, I am choosing one row which will wrap all cards in the album when they exceed 12 columns***
+        **By Design, to make it easy to add content from a database in the future, I am choosing one row which will wrap all cards in the album when they exceed 12 columns**
 
 
-###Style Sheets###
+**Style Sheets**
 I've decided to separate the style sheets so that there is one for all shared elements (header, footer, fonts, etc.) and another for each individual html.  This will allow me to eventually have only one html for shared nav, header, footer.
 
-###To Do###
+**To Do**
 Social Icons not linked
